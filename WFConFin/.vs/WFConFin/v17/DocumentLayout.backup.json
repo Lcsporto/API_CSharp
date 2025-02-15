@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\wfconfin\\wfconfin\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|solutionrelative:wfconfin\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\wfconfin\\wfconfin\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|solutionrelative:wfconfin\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\wfconfin\\wfconfin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|solutionrelative:wfconfin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Production.json",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\appsettings.Production.json",
+              "RelativeDocumentMoniker": "WFConFin\\appsettings.Production.json",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\appsettings.Production.json",
+              "RelativeToolTip": "WFConFin\\appsettings.Production.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-15T19:50:29.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\appsettings.json",
+              "RelativeDocumentMoniker": "WFConFin\\appsettings.json",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\appsettings.json",
+              "RelativeToolTip": "WFConFin\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-15T19:49:45.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "WFConFin\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\appsettings.Development.json*",
+              "RelativeToolTip": "WFConFin\\appsettings.Development.json*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-15T19:47:49.249Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
