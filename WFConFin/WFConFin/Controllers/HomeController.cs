@@ -27,5 +27,32 @@ namespace WFConFin.Controllers
             var result = "Retorno em texto 3 - Valor: " + valor;
             return Ok(result);
         }
+
+        [HttpPost("info4")]
+        public IActionResult GetInformacao4([FromQuery] string valor)
+        {
+            var result = "Retorno em texto 4 - Valor: " + valor;
+            return Ok(result);
+        }
+
+        [HttpGet("info5")]
+        public IActionResult GetInformacao5([FromHeader] string valor)
+        {
+            var result = "Retorno em texto 5 - Valor: " + valor;
+            return Ok(result);
+        }
+
+        [HttpPost("info6")]
+        public IActionResult GetInformacao6([FromBody] Corpo corpo)
+        {
+            var result = "Retorno em texto 6 - Valor: " + corpo.valor;
+            return Ok(result);
+        }
     }
+
+    public class Corpo
+    {
+        public string valor { get; set; }
+    }
+
 }

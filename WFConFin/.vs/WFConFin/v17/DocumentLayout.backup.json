@@ -34,9 +34,9 @@
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "WFConFin\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\Controllers\\HomeController.cs*",
-              "RelativeToolTip": "WFConFin\\Controllers\\HomeController.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAiAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WFConFin\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwC8AAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-18T01:32:42.782Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "WFConFin\\appsettings.Production.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-15T19:50:29.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T19:50:29.704Z"
             },
             {
               "$type": "Document",
