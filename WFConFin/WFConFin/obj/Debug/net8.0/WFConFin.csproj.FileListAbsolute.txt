@@ -35,3 +35,5 @@ C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WF
 C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\obj\Debug\net8.0\WFConFin.pdb
 C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\obj\Debug\net8.0\WFConFin.genruntimeconfig.cache
 C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\obj\Debug\net8.0\ref\WFConFin.dll
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\bin\Debug\net8.0\appsettings.Production.json
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\bin\Debug\net8.0\appsettings.Stagin.json

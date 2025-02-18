@@ -1,5 +1,41 @@
 [
   {
+    "ContainingType": "WFConFin.Controllers.HomeController",
+    "Method": "GetInformacao",
+    "RelativePath": "Home",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WFConFin.Controllers.HomeController",
+    "Method": "GetInformacao2",
+    "RelativePath": "Home/info2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WFConFin.Controllers.HomeController",
+    "Method": "GetInformacao3",
+    "RelativePath": "Home/info3/{valor}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "valor",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WFConFin.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

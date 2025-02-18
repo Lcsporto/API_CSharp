@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\wfconfin\\wfconfin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|solutionrelative:wfconfin\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\wfconfin\\wfconfin\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|solutionrelative:wfconfin\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -27,6 +31,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WFConFin\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WFConFin\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-18T01:32:42.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "appsettings.Production.json",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\appsettings.Production.json",
               "RelativeDocumentMoniker": "WFConFin\\appsettings.Production.json",
@@ -39,7 +56,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\appsettings.json",
               "RelativeDocumentMoniker": "WFConFin\\appsettings.json",
@@ -47,12 +64,11 @@
               "RelativeToolTip": "WFConFin\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-15T19:49:45.397Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T19:49:45.397Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\appsettings.Development.json",
               "RelativeDocumentMoniker": "WFConFin\\appsettings.Development.json",
@@ -60,8 +76,7 @@
               "RelativeToolTip": "WFConFin\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-15T19:47:49.249Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T19:47:49.249Z"
             }
           ]
         }
