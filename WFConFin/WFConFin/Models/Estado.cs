@@ -11,5 +11,6 @@ namespace WFConFin.Models
         [Required(ErrorMessage ="O campo Nome é obrigatório")]
         [StringLength(200, MinimumLength = 3, ErrorMessage ="O Campo nome deve ter entre 03 e 200 caracteres")]
         public string Nome { get; set; }
+
     }
 }
