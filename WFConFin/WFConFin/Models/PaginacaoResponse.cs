@@ -12,7 +12,7 @@
             Dados = dados;
             TotalLinhas = totalLinhas;
             Skip = skip;
-            Take = take;
+            Take = take; 
         }
     }
 }
