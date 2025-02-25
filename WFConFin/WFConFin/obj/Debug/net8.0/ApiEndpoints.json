@@ -75,6 +75,37 @@
   },
   {
     "ContainingType": "WFConFin.Controllers.EstadoController",
+    "Method": "GetEstadoPaginacao",
+    "RelativePath": "api/Estado/Paginacao",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "valor",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "skip",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ordemDesc",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WFConFin.Controllers.EstadoController",
     "Method": "GetEstadoPesquisa",
     "RelativePath": "api/Estado/Pesquisa",
     "HttpMethod": "GET",
