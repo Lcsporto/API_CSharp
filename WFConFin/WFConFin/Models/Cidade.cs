@@ -1,5 +1,6 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace WFConFin.Models
 {
@@ -22,6 +23,8 @@ namespace WFConFin.Models
         }
 
         //Relacionamento Entity FrameWork
+
+        [JsonIgnore] //Ele não envia o dado junto na resposta da requisição. 
         public Estado Estado { get; set; }
     }
 }

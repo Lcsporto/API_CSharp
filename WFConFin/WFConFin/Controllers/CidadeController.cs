@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 using WFConFin.Data;
@@ -53,6 +54,30 @@ namespace WFConFin.Controllers
             catch (Exception e)
             {
                 return BadRequest($"Erro na inclusão de cidade. Exceção: {e.Message}");
+            }
+        }
+
+        [HttpPut]
+        public IActionResult PutCidades([FromBody] Cidade cidade)
+        {
+            try
+            {
+                _context.Cidade.Update(cidade);
+                var valor = _context.SaveChanges();
+
+                if (valor == 1)
+                {
+                    return Ok("Sucesso, cidade alterada.");
+                }
+                else
+                {
+                    return BadRequest("Erro, cidade não alterada.");
+                }
+
+            }
+            catch (Exception e)
+            {
+                return BadRequest($"Erro na alteração de cidade. Exceção: {e.Message}");
             }
         }
     }

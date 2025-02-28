@@ -26,6 +26,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WFConFin.Controllers.CidadeController",
+    "Method": "PutCidades",
+    "RelativePath": "api/Cidade",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cidade",
+        "Type": "WFConFin.Models.Cidade",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WFConFin.Controllers.EstadoController",
     "Method": "GetEstados",
     "RelativePath": "api/Estado",

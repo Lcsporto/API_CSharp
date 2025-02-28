@@ -44,6 +44,35 @@
             "description": "OK"
           }
         }
+      },
+      "put": {
+        "tags": [
+          "Cidade"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cidade"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cidade"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Cidade"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/api/Estado": {
@@ -445,9 +474,6 @@
             "maxLength": 2,
             "minLength": 2,
             "type": "string"
-          },
-          "estado": {
-            "$ref": "#/components/schemas/Estado"
           }
         },
         "additionalProperties": false
