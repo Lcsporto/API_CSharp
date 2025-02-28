@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "WFConFin.Controllers.CidadeController",
+    "Method": "GetCidades",
+    "RelativePath": "api/Cidade",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WFConFin.Controllers.CidadeController",
+    "Method": "PostCidades",
+    "RelativePath": "api/Cidade",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cidade",
+        "Type": "WFConFin.Models.Cidade",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WFConFin.Controllers.EstadoController",
     "Method": "GetEstados",
     "RelativePath": "api/Estado",

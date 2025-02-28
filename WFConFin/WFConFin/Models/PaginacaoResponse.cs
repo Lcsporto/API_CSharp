@@ -1,4 +1,6 @@
-﻿namespace WFConFin.Models
+﻿using System.Collections.Generic;
+
+namespace WFConFin.Models
 {
     public class PaginacaoResponse<T> where T : class
     {
