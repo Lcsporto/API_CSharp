@@ -58,7 +58,7 @@ namespace WFConFin.Controllers
         }
 
         [HttpPut]
-        public IActionResult PutCidades([FromBody] Cidade cidade)
+        public IActionResult PutCidade([FromBody] Cidade cidade)
         {
             try
             {
@@ -78,6 +78,38 @@ namespace WFConFin.Controllers
             catch (Exception e)
             {
                 return BadRequest($"Erro na alteração de cidade. Exceção: {e.Message}");
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeleteCidade([FromRoute] Guid id)
+        {
+            try
+            {
+                Cidade cidade = _context.Cidade.Find(id);
+                if (cidade != null)
+                {
+                    _context.Cidade.Remove(cidade);
+
+                    var valor = _context.SaveChanges();
+
+                    if (valor == 1)
+                    {
+                        return Ok("Sucesso, cidade excluída.");
+                    }
+                    else
+                    {
+                        return BadRequest("Erro, cidade não excluída.");
+                    }
+                }
+                else
+                {
+                    return NotFound("Erro, cidade não existe.");
+                }
+            }
+            catch (Exception e)
+            {
+                return BadRequest($"Erro na exclusão de cidade. Exceção: {e.Message}");
             }
         }
     }
