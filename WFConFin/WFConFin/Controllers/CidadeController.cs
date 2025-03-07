@@ -4,6 +4,7 @@ using System;
 using System.Linq;
 using WFConFin.Data;
 using WFConFin.Models;
+using System.Linq.Expressions;
 
 namespace WFConFin.Controllers
 {
@@ -110,6 +111,89 @@ namespace WFConFin.Controllers
             catch (Exception e)
             {
                 return BadRequest($"Erro na exclusão de cidade. Exceção: {e.Message}");
+            }
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetCidade([FromRoute] Guid id)
+        {
+            try
+            {
+                Cidade cidade = _context.Cidade.Find(id);
+                if (cidade != null)
+                {
+                    return Ok(cidade);
+                }
+                else
+                {
+                    return NotFound("Erro, cidade não existe.");
+                }
+            }
+            catch (Exception e)
+            {
+                return BadRequest($"Erro na consulta de cidade. Exceção: {e.Message}");
+            }
+        }
+
+        [HttpGet("Pesquisa")]
+        public IActionResult GetCidadePesquisa([FromQuery] string valor)
+        {
+            try
+            {
+                //Query Criteria
+                var lista = from o in _context.Cidade.ToList()
+                            where o.Nome.ToUpper().Contains(valor.ToUpper())
+                            || o.EstadoSigla.ToUpper().Contains(valor.ToUpper())
+                            select o;
+
+                return Ok(lista);
+
+            }
+            catch (Exception e)
+            {
+                return BadRequest($"Erro, pesquisa de cidade. Exceção: {e.Message}");
+            }
+        }
+
+        [HttpGet("Paginacao")]
+        public IActionResult GetCidadePaginacao([FromQuery] string valor, int skip, int take, bool ordemDesc)
+        {
+            try
+            {
+                //Query Criteria
+                var lista = from o in _context.Cidade.ToList()
+                            where o.Nome.ToUpper().Contains(valor.ToUpper())
+                            || o.EstadoSigla.ToUpper().Contains(valor.ToUpper())
+                            select o;
+
+                if (ordemDesc)
+                {
+                    lista = from o in lista
+                            orderby o.Nome descending
+                            select o;
+                }
+                else
+                {
+                    lista = from o in lista
+                            orderby o.Nome ascending
+                            select o;
+                }
+
+                var qtde = lista.Count();
+
+                lista = lista
+                        .Skip(skip)
+                        .Take(take)
+                        .ToList();
+
+                var paginacaoResponse = new PaginacaoResponse<Cidade>(lista, qtde, skip, take);
+
+                return Ok(paginacaoResponse);
+
+            }
+            catch (Exception e)
+            {
+                return BadRequest($"Erro, pesquisa de cidade. Exceção: {e.Message}");
             }
         }
     }

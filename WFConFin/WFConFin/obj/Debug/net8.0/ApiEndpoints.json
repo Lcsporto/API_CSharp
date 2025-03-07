@@ -58,6 +58,69 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WFConFin.Controllers.CidadeController",
+    "Method": "GetCidade",
+    "RelativePath": "api/Cidade/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WFConFin.Controllers.CidadeController",
+    "Method": "GetCidadePaginacao",
+    "RelativePath": "api/Cidade/Paginacao",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "valor",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "skip",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "take",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "ordemDesc",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WFConFin.Controllers.CidadeController",
+    "Method": "GetCidadePesquisa",
+    "RelativePath": "api/Cidade/Pesquisa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "valor",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WFConFin.Controllers.EstadoController",
     "Method": "GetEstados",
     "RelativePath": "api/Estado",
