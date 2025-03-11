@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\wfconfin\\wfconfin\\wfconfin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|solutionrelative:wfconfin\\wfconfin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\wfconfin\\wfconfin\\controllers\\cidadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|solutionrelative:wfconfin\\controllers\\cidadecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,12 +11,16 @@
       "RelativeMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|solutionrelative:wfconfin\\controllers\\estadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\wfconfin\\wfconfin\\models\\cidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|solutionrelative:wfconfin\\models\\cidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\wfconfin\\wfconfin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|solutionrelative:wfconfin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\wfconfin\\wfconfin\\models\\cidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|solutionrelative:wfconfin\\models\\cidade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\wfconfin\\wfconfin\\models\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{76553DC3-232D-4FA2-93C3-A89262DDCCFB}|WFConFin\\WFConFin.csproj|solutionrelative:wfconfin\\models\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,43 +30,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WFConFin",
-              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\WFConFin.csproj",
-              "RelativeDocumentMoniker": "WFConFin\\WFConFin.csproj",
-              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\WFConFin.csproj",
-              "RelativeToolTip": "WFConFin\\WFConFin.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-07T02:20:33.975Z",
-              "EditorCaption": ""
+              "DocumentIndex": 4,
+              "Title": "Estado.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\Models\\Estado.cs",
+              "RelativeDocumentMoniker": "WFConFin\\Models\\Estado.cs",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\Models\\Estado.cs",
+              "RelativeToolTip": "WFConFin\\Models\\Estado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T19:56:05.499Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "EstadoController.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\Controllers\\EstadoController.cs",
               "RelativeDocumentMoniker": "WFConFin\\Controllers\\EstadoController.cs",
               "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\Controllers\\EstadoController.cs",
               "RelativeToolTip": "WFConFin\\Controllers\\EstadoController.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAAALQAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAK4AAAAAAAAAAAAcwNsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T01:16:08.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-07T01:16:08.248Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Cidade.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\Models\\Cidade.cs",
               "RelativeDocumentMoniker": "WFConFin\\Models\\Cidade.cs",
               "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\Models\\Cidade.cs",
               "RelativeToolTip": "WFConFin\\Models\\Cidade.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABsAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAowB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-28T20:29:18.612Z"
             },
@@ -80,18 +78,17 @@
               "RelativeToolTip": "WFConFin\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-27T23:26:18.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T23:26:18.723Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "CidadeController.cs",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\Controllers\\CidadeController.cs",
               "RelativeDocumentMoniker": "WFConFin\\Controllers\\CidadeController.cs",
               "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\WFConFin\\WFConFin\\Controllers\\CidadeController.cs",
               "RelativeToolTip": "WFConFin\\Controllers\\CidadeController.cs",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAAAMMAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAJsAAAAAAAAAAAAkwKUAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-27T23:09:25.637Z",
               "EditorCaption": ""

@@ -196,5 +196,6 @@ namespace WFConFin.Controllers
                 return BadRequest($"Erro, pesquisa de cidade. Exceção: {e.Message}");
             }
         }
-    }
+
+    }   
 }

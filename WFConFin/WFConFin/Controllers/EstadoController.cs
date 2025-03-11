@@ -186,7 +186,7 @@ namespace WFConFin.Controllers
                 var lista = from o in _context.Estado.ToList()
                             where o.Sigla.ToUpper().Contains(valor.ToUpper())
                             || o.Nome.ToUpper().Contains(valor.ToUpper())
-                            select o;
+                            select o;   
 
                 if (ordemDesc)
                 {
