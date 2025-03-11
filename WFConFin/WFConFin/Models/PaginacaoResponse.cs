@@ -20,12 +20,12 @@ namespace WFConFin.Models
             Take = take; 
         }
 
-        public PaginacaoResponse(IEnumerable<Cidade> lista, int qtde, int skip, int take)
+        /*public PaginacaoResponse(IEnumerable<Cidade> lista, int qtde, int skip, int take)
         {
             this.lista = lista;
             this.qtde = qtde;
             Skip = skip;
             Take = take;
-        }
+        }*/
     }
 }
