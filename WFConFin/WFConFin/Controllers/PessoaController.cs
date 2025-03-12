@@ -1,150 +1,149 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
+using System.Threading.Tasks;
 using WFConFin.Data;
 using WFConFin.Models;
-using System.Linq.Expressions;
-using System.Threading.Tasks;
 
 namespace WFConFin.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class CidadeController : Controller
+    public class PessoaController : Controller
     {
-
         private readonly WFConFinDbContext _context;
 
-        public CidadeController(WFConFinDbContext context)
+        public PessoaController(WFConFinDbContext context)
         {
             _context = context;
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetCidades()
+        public async Task<IActionResult> GetPessoas()
         {
             try
             {
-                var result = _context.Cidade.ToList();
+                var result = _context.Pessoa.ToList();
                 return Ok(result);
+
             }
             catch (Exception e)
             {
-                return BadRequest($"Erro na listagem de cidades. Exceção: {e.Message}");
+                return BadRequest($"Erro na listagem de pessoas. Exceção {e.Message}");
             }
         }
 
         [HttpPost]
-        public async Task<IActionResult> PostCidades([FromBody] Cidade cidade)
+        public async Task<IActionResult> PostPessoa([FromBody] Pessoa pessoa)
         {
             try
             {
-                await _context.Cidade.AddAsync(cidade);
+                await _context.Pessoa.AddAsync(pessoa);
                 var valor = await _context.SaveChangesAsync();
 
                 if (valor == 1)
                 {
-                    return Ok("Sucesso, cidade incluída.");
+                    return Ok("Sucesso, pessoa incluída");
                 }
                 else
                 {
-                    return BadRequest("Erro, cidade não incluída.");
+                    return BadRequest("Erro, pessoa não incluída");
                 }
 
             }
             catch (Exception e)
             {
-                return BadRequest($"Erro na inclusão de cidade. Exceção: {e.Message}");
+                return BadRequest($"Erro na inclusão de pessoa. Exceção {e.Message}");
             }
         }
 
         [HttpPut]
-        public async Task<IActionResult> PutCidade([FromBody] Cidade cidade)
+        public async Task<IActionResult> PutPessoa([FromBody] Pessoa pessoa)
         {
             try
             {
-                _context.Cidade.Update(cidade);
+                _context.Pessoa.Update(pessoa);
                 var valor = await _context.SaveChangesAsync();
 
                 if (valor == 1)
                 {
-                    return Ok("Sucesso, cidade alterada.");
+                    return Ok("Sucesso, pessoa alterada");
                 }
                 else
                 {
-                    return BadRequest("Erro, cidade não alterada.");
+                    return BadRequest("Erro, pessoa não alterada");
                 }
 
             }
             catch (Exception e)
             {
-                return BadRequest($"Erro na alteração de cidade. Exceção: {e.Message}");
+                return BadRequest($"Erro na alteração de pessoa. Exceção {e.Message}");
             }
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCidade([FromRoute] Guid id)
+        public async Task<IActionResult> DeletePessoa([FromRoute] Guid id)
         {
             try
             {
-                Cidade cidade = await _context.Cidade.FindAsync(id);
-                if (cidade != null)
+                Pessoa pessoa = await _context.Pessoa.FindAsync(id);
+
+                if (pessoa != null)
                 {
-                    _context.Cidade.Remove(cidade);
-
+                    _context.Pessoa.Remove(pessoa);
                     var valor = await _context.SaveChangesAsync();
-
                     if (valor == 1)
                     {
-                        return Ok("Sucesso, cidade excluída.");
+                        return Ok("Sucesso, pessoa excluída");
                     }
                     else
                     {
-                        return BadRequest("Erro, cidade não excluída.");
+                        return BadRequest("Erro, pessoa não excluída");
                     }
                 }
                 else
                 {
-                    return NotFound("Erro, cidade não existe.");
+                    return NotFound("Erro, pessoa não existe.");
                 }
+
             }
             catch (Exception e)
             {
-                return BadRequest($"Erro na exclusão de cidade. Exceção: {e.Message}");
+                return BadRequest($"Erro na alteração de pessoa. Exceção {e.Message}");
             }
         }
 
         [HttpGet("{id}")]
-        public async Task<IActionResult> GetCidade([FromRoute] Guid id)
+        public async Task<IActionResult> GetPessoa([FromRoute] Guid id)
         {
             try
             {
-                Cidade cidade = await _context.Cidade.FindAsync(id);
-                if (cidade != null)
+                Pessoa pessoa = await _context.Pessoa.FindAsync(id);
+                if (pessoa != null)
                 {
-                    return Ok(cidade);
+                    return Ok(pessoa);
                 }
                 else
                 {
-                    return NotFound("Erro, cidade não existe.");
+                    return NotFound("Erro, pessoa não existe.");
                 }
             }
             catch (Exception e)
             {
-                return BadRequest($"Erro na consulta de cidade. Exceção: {e.Message}");
+                return BadRequest($"Erro na consulta de pessoa. Exceção: {e.Message}");
             }
         }
 
         [HttpGet("Pesquisa")]
-        public async Task<IActionResult> GetCidadePesquisa([FromQuery] string valor)
+        public async Task<IActionResult> GetPessoaPesquisa([FromQuery] string valor)
         {
             try
             {
                 //Query Criteria
-                var lista = from o in _context.Cidade.ToList()
+                var lista = from o in _context.Pessoa.ToList()
                             where o.Nome.ToUpper().Contains(valor.ToUpper())
-                            || o.EstadoSigla.ToUpper().Contains(valor.ToUpper())
+                            || o.Telefone.ToUpper().Contains(valor.ToUpper())
+                            || o.Email.ToUpper().Contains(valor.ToUpper())
                             select o;
 
                 return Ok(lista);
@@ -152,19 +151,20 @@ namespace WFConFin.Controllers
             }
             catch (Exception e)
             {
-                return BadRequest($"Erro, pesquisa de cidade. Exceção: {e.Message}");
+                return BadRequest($"Erro, pesquisa de pessoa. Exceção: {e.Message}");
             }
         }
 
         [HttpGet("Paginacao")]
-        public async Task<IActionResult> GetCidadePaginacao([FromQuery] string valor, int skip, int take, bool ordemDesc)
+        public async Task<IActionResult> GetPessoaPaginacao([FromQuery] string valor, int skip, int take, bool ordemDesc)
         {
             try
             {
                 //Query Criteria
-                var lista = from o in _context.Cidade.ToList()
+                var lista = from o in _context.Pessoa.ToList()
                             where o.Nome.ToUpper().Contains(valor.ToUpper())
-                            || o.EstadoSigla.ToUpper().Contains(valor.ToUpper())
+                            || o.Telefone.ToUpper().Contains(valor.ToUpper())
+                            || o.Email.ToUpper().Contains(valor.ToUpper())
                             select o;
 
                 if (ordemDesc)
@@ -187,16 +187,16 @@ namespace WFConFin.Controllers
                         .Take(take)
                         .ToList();
 
-                var paginacaoResponse = new PaginacaoResponse<Cidade>(lista, qtde, skip, take);
+                var paginacaoResponse = new PaginacaoResponse<Pessoa>(lista, qtde, skip, take);
 
                 return Ok(paginacaoResponse);
 
             }
             catch (Exception e)
             {
-                return BadRequest($"Erro, pesquisa de cidade. Exceção: {e.Message}");
+                return BadRequest($"Erro, pesquisa de pessoa. Exceção: {e.Message}");
             }
         }
 
-    }   
+    }
 }
