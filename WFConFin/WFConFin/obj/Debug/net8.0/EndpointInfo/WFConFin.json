@@ -184,6 +184,208 @@
         }
       }
     },
+    "/api/Conta": {
+      "get": {
+        "tags": [
+          "Conta"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Conta"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Conta"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Conta"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Conta"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Conta"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Conta"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Conta"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Conta"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Conta/{id}": {
+      "delete": {
+        "tags": [
+          "Conta"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Conta"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Conta/Pesquisa": {
+      "get": {
+        "tags": [
+          "Conta"
+        ],
+        "parameters": [
+          {
+            "name": "valor",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Conta/Paginacao": {
+      "get": {
+        "tags": [
+          "Conta"
+        ],
+        "parameters": [
+          {
+            "name": "valor",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "skip",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "take",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          },
+          {
+            "name": "ordemDesc",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Conta/Pessoa/{pessoaId}": {
+      "get": {
+        "tags": [
+          "Conta"
+        ],
+        "parameters": [
+          {
+            "name": "pessoaId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Estado": {
       "get": {
         "tags": [
@@ -766,6 +968,51 @@
         },
         "additionalProperties": false
       },
+      "Conta": {
+        "required": [
+          "dataVencimento",
+          "descricao",
+          "pessoaId",
+          "situacao",
+          "valor"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "descricao": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string"
+          },
+          "valor": {
+            "type": "number",
+            "format": "double"
+          },
+          "dataVencimento": {
+            "type": "string",
+            "format": "date"
+          },
+          "dataPagamento": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "situacao": {
+            "$ref": "#/components/schemas/Situacao"
+          },
+          "pessoaId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "pessoa": {
+            "$ref": "#/components/schemas/Pessoa"
+          }
+        },
+        "additionalProperties": false
+      },
       "Corpo": {
         "type": "object",
         "properties": {
@@ -847,6 +1094,14 @@
           }
         },
         "additionalProperties": false
+      },
+      "Situacao": {
+        "enum": [
+          0,
+          1
+        ],
+        "type": "integer",
+        "format": "int32"
       },
       "WeatherForecast": {
         "type": "object",

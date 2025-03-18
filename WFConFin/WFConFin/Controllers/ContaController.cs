@@ -9,7 +9,7 @@ using WFConFin.Models;
 namespace WFConFin.Controllers
 {
     [ApiController]
-    [Route("api/controller")]
+    [Route("api/[controller]")]
     public class ContaController : Controller
     {
         private readonly WFConFinDbContext _context;
@@ -20,7 +20,7 @@ namespace WFConFin.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetPContas()
+        public async Task<IActionResult> GetContas()
         {
             try
             {
@@ -194,6 +194,25 @@ namespace WFConFin.Controllers
             catch (Exception e)
             {
                 return BadRequest($"Erro, pesquisa de conta. Exceção: {e.Message}");
+            }
+        }
+
+        [HttpGet("Pessoa/{pessoaId}")]
+        public async Task<IActionResult> GetContasPessoa([FromRoute] Guid pessoaId)
+        {
+            try
+            {
+                //Query Criteria
+                var lista = from o in _context.Conta.Include(o => o.Pessoa).ToList()
+                            where o.PessoaId == pessoaId
+                            select o;
+
+                return Ok(lista);
+
+            }
+            catch (Exception e)
+            {
+                return BadRequest($"Erro, pesquisa de conta por pessoa. Exceção: {e.Message}");
             }
         }
     }
