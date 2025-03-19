@@ -35,7 +35,10 @@ namespace WFConFin.Controllers
                 return NotFound("Usuário inválido.");
             }
 
-            if (usuario.Password != usuarioLogin.Password)
+            var passwordHash = MD5Hash.CalcHash(usuarioLogin.Password);
+
+
+            if (usuario.Password != passwordHash)
             {
                 return BadRequest("Senha inválida");
             }
@@ -81,6 +84,10 @@ namespace WFConFin.Controllers
                     return BadRequest("Erro, informação login inválido");
                 }
 
+                string passwordHash = MD5Hash.CalcHash(usuario.Password); //mandando encriptar a senha com o Hash
+
+                usuario.Password = passwordHash; //recebendo encriptada
+
                 await _context.Usuario.AddAsync(usuario);
                 var valor = await _context.SaveChangesAsync();
 
@@ -106,6 +113,9 @@ namespace WFConFin.Controllers
         {
             try
             {
+                string passwordHash = MD5Hash.CalcHash(usuario.Password);
+                usuario.Password = passwordHash; 
+
                 _context.Usuario.Update(usuario);
                 var valor = await _context.SaveChangesAsync();
 

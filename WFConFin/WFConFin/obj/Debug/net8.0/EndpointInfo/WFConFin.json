@@ -1251,7 +1251,7 @@
             "type": "string"
           },
           "password": {
-            "maxLength": 20,
+            "maxLength": 100,
             "minLength": 3,
             "type": "string"
           },
