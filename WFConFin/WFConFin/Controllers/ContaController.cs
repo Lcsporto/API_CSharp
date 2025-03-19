@@ -5,11 +5,13 @@ using System.Threading.Tasks;
 using System;
 using WFConFin.Data;
 using WFConFin.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WFConFin.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class ContaController : Controller
     {
         private readonly WFConFinDbContext _context;
@@ -35,6 +37,7 @@ namespace WFConFin.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Gerente,Empregado")]
         public async Task<IActionResult> PostConta([FromBody] Conta conta)
         {
             try
@@ -59,6 +62,7 @@ namespace WFConFin.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "Gerente,Empregado")]
         public async Task<IActionResult> PutConta([FromBody] Conta conta)
         {
             try
@@ -83,6 +87,7 @@ namespace WFConFin.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Gerente")]
         public async Task<IActionResult> DeleteConta([FromRoute] Guid id)
         {
             try

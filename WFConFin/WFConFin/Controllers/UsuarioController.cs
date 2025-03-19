@@ -4,18 +4,53 @@ using System.Threading.Tasks;
 using System;
 using WFConFin.Data;
 using WFConFin.Models;
+using WFConFin.Services;
+using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WFConFin.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize] // Esse daqui diz que para cada método da Controller, o usuário precisa estar autenticado para acessar
     public class UsuarioController : Controller
     {
         private readonly WFConFinDbContext _context;
+        private readonly TokenService _service;
 
-        public UsuarioController(WFConFinDbContext context)
+        public UsuarioController(WFConFinDbContext context, TokenService service = null)
         {
             _context = context;
+            _service = service;
+        }
+
+        [HttpPost]
+        [Route("Login")]
+        [AllowAnonymous] // Deixa que uma pessoa não esteja autenticado para acessar
+        public async Task<IActionResult> Login([FromBody] UsuarioLogin usuarioLogin)
+        {
+            var usuario = _context.Usuario.Where(x => x.Login == usuarioLogin.Login).FirstOrDefault();
+            if (usuario == null)
+            {
+                return NotFound("Usuário inválido.");
+            }
+
+            if (usuario.Password != usuarioLogin.Password)
+            {
+                return BadRequest("Senha inválida");
+            }
+
+            var token = _service.GerarToken(usuario);
+
+            usuario.Password = "";
+
+            var result = new UsuarioResponse()
+            {
+                Usuario = usuario,
+                Token = token
+            };
+
+            return Ok(result);
         }
 
         [HttpGet]
@@ -34,6 +69,7 @@ namespace WFConFin.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Gerente,Empregado")] // Configurando quem pode acessar
         public async Task<IActionResult> PostUsuario([FromBody] Usuario usuario)
         {
             try
@@ -50,7 +86,7 @@ namespace WFConFin.Controllers
 
                 if (valor == 1)
                 {
-                    return Ok("Sucesso, usuaário incluído");
+                    return Ok("Sucesso, usuário incluído");
                 }
                 else
                 {
@@ -65,6 +101,7 @@ namespace WFConFin.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "Gerente,Empregado")]
         public async Task<IActionResult> PutUsuario([FromBody] Usuario usuario)
         {
             try
@@ -89,6 +126,7 @@ namespace WFConFin.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Gerente")]
         public async Task<IActionResult> DeleteUsuario([FromRoute] Guid id)
         {
             try
@@ -120,5 +158,10 @@ namespace WFConFin.Controllers
             }
         }
 
+        public override bool Equals(object obj)
+        {
+            return obj is UsuarioController controller &&
+                   EqualityComparer<TokenService>.Default.Equals(_service, controller._service);
+        }
     }
 }

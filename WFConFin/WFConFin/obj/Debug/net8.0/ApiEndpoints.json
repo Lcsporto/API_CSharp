@@ -558,6 +558,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "WFConFin.Controllers.UsuarioController",
+    "Method": "Login",
+    "RelativePath": "api/Usuario/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioLogin",
+        "Type": "WFConFin.Models.UsuarioLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WFConFin.Controllers.HomeController",
     "Method": "GetInformacao",
     "RelativePath": "Home",

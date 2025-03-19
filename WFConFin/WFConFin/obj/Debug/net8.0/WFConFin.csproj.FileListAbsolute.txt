@@ -139,3 +139,11 @@ C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WF
 C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\obj\Debug\net8.0\WFConFin.pdb
 C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\obj\Debug\net8.0\WFConFin.genruntimeconfig.cache
 C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\obj\Debug\net8.0\ref\WFConFin.dll
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
