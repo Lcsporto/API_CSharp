@@ -1,0 +1,7 @@
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\obj\Release\net8.0\win-x64\PubTmp\Out\appsettings.Development.json
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\obj\Release\net8.0\win-x64\PubTmp\Out\appsettings.json
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\obj\Release\net8.0\win-x64\PubTmp\Out\appsettings.Production.json
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\obj\Release\net8.0\win-x64\PubTmp\Out\appsettings.Stagin.json
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\obj\Release\net8.0\win-x64\PubTmp\Out\WFConFin.pdb
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\obj\Release\net8.0\win-x64\PubTmp\Out\aspnetcorev2_inprocess.dll
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\WFConFin\WFConFin\obj\Release\net8.0\win-x64\PubTmp\Out\WFConFin.exe
