@@ -161,15 +161,23 @@ namespace WFConFin.Controllers
         }
 
         [HttpGet("Paginacao")]
-        public async Task<IActionResult> GetPContaPaginacao([FromQuery] string valor, int skip, int take, bool ordemDesc)
+        public async Task<IActionResult> GetPContaPaginacao([FromQuery] string? valor, int skip, int take, bool ordemDesc)
         {
             try
             {
                 //Query Criteria
+
                 var lista = from o in _context.Conta.Include(o => o.Pessoa).ToList()
+                            select o;
+
+                if (!String.IsNullOrEmpty(valor))
+                {
+                    lista = from o in lista
                             where o.Descricao.ToUpper().Contains(valor.ToUpper())
                             || o.Pessoa.Nome.ToUpper().Contains(valor.ToUpper())
                             select o;
+                }
+
 
                 if (ordemDesc)
                 {
@@ -187,7 +195,7 @@ namespace WFConFin.Controllers
                 var qtde = lista.Count();
 
                 lista = lista
-                        .Skip(skip)
+                        .Skip((skip - 1) * take)
                         .Take(take)
                         .ToList();
 

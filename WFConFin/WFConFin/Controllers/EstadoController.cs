@@ -24,8 +24,8 @@ namespace WFConFin.Controllers
 
         [HttpGet]
         public async Task<IActionResult> GetEstados() //O Task serve para fazer um processamento separado do método
-            //Quando temos uma Task, devemos transformar o método em Assíncrono. 
-        { 
+                                                      //Quando temos uma Task, devemos transformar o método em Assíncrono. 
+        {
             try
             {
                 var result = _context.Estado.ToList();
@@ -116,12 +116,12 @@ namespace WFConFin.Controllers
             }
             catch (Exception e)
             {
-                return BadRequest($"Erro, estado não alterado. Exceção: {e.Message}");
+                return BadRequest($"Erro, estado não excluído. Exceção: {e.Message}");
             }
         }
 
         [HttpGet("{sigla}")]
-        public async Task<IActionResult>GetEstado([FromRoute] string sigla)
+        public async Task<IActionResult> GetEstado([FromRoute] string sigla)
         {
             try
             {
@@ -185,15 +185,22 @@ namespace WFConFin.Controllers
         }
 
         [HttpGet("Paginacao")]
-        public async Task<IActionResult> GetEstadoPaginacao([FromQuery] string valor, int skip, int take, bool ordemDesc)
+        public async Task<IActionResult> GetEstadoPaginacao([FromQuery] string? valor, int skip, int take, bool ordemDesc)
         {
             try
             {
                 //Query Criteria
                 var lista = from o in _context.Estado.ToList()
-                            where o.Sigla.ToUpper().Contains(valor.ToUpper())
-                            || o.Nome.ToUpper().Contains(valor.ToUpper())
-                            select o;   
+                            select o;
+
+                if (!String.IsNullOrEmpty(valor))
+                {
+                    lista = from o in lista 
+                        where o.Sigla.ToUpper().Contains(valor.ToUpper())
+                        || o.Nome.ToUpper().Contains(valor.ToUpper())
+                            select o;
+                }
+
 
                 if (ordemDesc)
                 {
@@ -211,7 +218,7 @@ namespace WFConFin.Controllers
                 var qtde = lista.Count();
 
                 lista = lista
-                        .Skip(skip)
+                        .Skip((skip - 1) * take)
                         .Take(take)
                         .ToList();
 

@@ -162,15 +162,22 @@ namespace WFConFin.Controllers
         }
 
         [HttpGet("Paginacao")]
-        public async Task<IActionResult> GetCidadePaginacao([FromQuery] string valor, int skip, int take, bool ordemDesc)
+        public async Task<IActionResult> GetCidadePaginacao([FromQuery] string? valor, int skip, int take, bool ordemDesc)
         {
             try
             {
                 //Query Criteria
                 var lista = from o in _context.Cidade.ToList()
+                            select o;
+
+                if (!String.IsNullOrEmpty(valor))
+                {
+                    lista = from o in lista
                             where o.Nome.ToUpper().Contains(valor.ToUpper())
                             || o.EstadoSigla.ToUpper().Contains(valor.ToUpper())
                             select o;
+                }
+
 
                 if (ordemDesc)
                 {
@@ -188,7 +195,7 @@ namespace WFConFin.Controllers
                 var qtde = lista.Count();
 
                 lista = lista
-                        .Skip(skip)
+                        .Skip((skip - 1) * take)
                         .Take(take)
                         .ToList();
 
@@ -203,5 +210,5 @@ namespace WFConFin.Controllers
             }
         }
 
-    }   
+    }
 }
