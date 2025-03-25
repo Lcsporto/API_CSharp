@@ -1,4 +1,6 @@
-﻿using System;
+﻿using FrontConFin.Models;
+using FrontConFin.Services;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -22,9 +24,25 @@ namespace FrontConFin
             Application.Exit();
         }
 
-        private void buttonLogin_Click(object sender, EventArgs e)
+        private async void buttonLogin_Click(object sender, EventArgs e)
         {
             //Verificação do Usuário
+            UsuarioLogin login = new UsuarioLogin()
+            {
+                Login = textBoxLogin.Text,
+                Password = textBoxPassword.Text
+            };
+
+            UsuarioResponse response = await UsuarioServices.Login(login);
+
+            if (response == null)
+            {
+                MessageBox.Show("Login ou senha inválidos.");
+                return;
+            }
+
+
+
             Close();
         }
     }

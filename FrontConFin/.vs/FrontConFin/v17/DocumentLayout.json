@@ -7,36 +7,12 @@
       "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\services\\usuarioservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\frontconfin\\frontconfin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\frontconfin\\frontconfin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\frontconfin\\frontconfin\\frontconfin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\frontconfin.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\frontconfin\\frontconfin\\models\\usuarioresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\models\\usuarioresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\frontconfin\\frontconfin\\models\\usuariologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\models\\usuariologin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\frontconfin\\frontconfin\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\frontconfin\\frontconfin\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\frontconfin\\frontconfin\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\frontconfin\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,47 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FrontConFin",
-              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\FrontConFin.csproj",
-              "RelativeDocumentMoniker": "FrontConFin\\FrontConFin.csproj",
-              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\FrontConFin.csproj",
-              "RelativeToolTip": "FrontConFin\\FrontConFin.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-25T02:39:16.494Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Program.cs",
-              "RelativeDocumentMoniker": "FrontConFin\\Program.cs",
-              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Program.cs",
-              "RelativeToolTip": "FrontConFin\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T02:42:11.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\appsettings.json",
-              "RelativeDocumentMoniker": "FrontConFin\\appsettings.json",
-              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\appsettings.json",
-              "RelativeToolTip": "FrontConFin\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-25T02:40:05.31Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -95,72 +32,34 @@
               "RelativeDocumentMoniker": "FrontConFin\\Services\\UsuarioServices.cs",
               "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Services\\UsuarioServices.cs",
               "RelativeToolTip": "FrontConFin\\Services\\UsuarioServices.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABpAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T02:26:10.092Z",
+              "WhenOpened": "2025-03-25T20:18:55.393Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "FrontConFin\\Models\\Usuario.cs",
-              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Models\\Usuario.cs",
-              "RelativeToolTip": "FrontConFin\\Models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FrmLogin.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\FrmLogin.cs",
+              "RelativeDocumentMoniker": "FrontConFin\\FrmLogin.cs",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\FrmLogin.cs",
+              "RelativeToolTip": "FrontConFin\\FrmLogin.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAswCsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T02:23:40.497Z",
+              "WhenOpened": "2025-03-25T20:12:40.228Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuarioResponse.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Models\\UsuarioResponse.cs",
-              "RelativeDocumentMoniker": "FrontConFin\\Models\\UsuarioResponse.cs",
-              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Models\\UsuarioResponse.cs",
-              "RelativeToolTip": "FrontConFin\\Models\\UsuarioResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T02:22:12.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UsuarioLogin.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Models\\UsuarioLogin.cs",
-              "RelativeDocumentMoniker": "FrontConFin\\Models\\UsuarioLogin.cs",
-              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Models\\UsuarioLogin.cs",
-              "RelativeToolTip": "FrontConFin\\Models\\UsuarioLogin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T02:20:53.159Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "FrmLogin.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\FrmLogin.cs",
               "RelativeDocumentMoniker": "FrontConFin\\FrmLogin.cs",
               "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\FrmLogin.cs [Projeto]",
               "RelativeToolTip": "FrontConFin\\FrmLogin.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T01:32:59.486Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FrmPrincipal.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\FrmPrincipal.cs",
-              "RelativeDocumentMoniker": "FrontConFin\\FrmPrincipal.cs",
-              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\FrmPrincipal.cs [Projeto]",
-              "RelativeToolTip": "FrontConFin\\FrmPrincipal.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T22:56:43.108Z",
+              "WhenOpened": "2025-03-25T20:12:26.252Z",
               "EditorCaption": " [Projeto]"
             }
           ]
