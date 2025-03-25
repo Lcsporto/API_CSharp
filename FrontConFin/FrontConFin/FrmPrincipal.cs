@@ -1,3 +1,6 @@
+using System;
+using System.Windows.Forms;
+
 namespace FrontConFin
 {
     public partial class FrmPrincipal : Form

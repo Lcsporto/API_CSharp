@@ -1,4 +1,7 @@
-﻿namespace FrontConFin
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace FrontConFin
 {
     partial class FrmPrincipal
     {

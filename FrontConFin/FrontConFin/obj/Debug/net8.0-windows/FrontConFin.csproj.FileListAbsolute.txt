@@ -16,3 +16,4 @@ C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\FrontConFin
 C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\FrontConFin\FrontConFin\obj\Debug\net8.0-windows\FrontConFin.genruntimeconfig.cache
 C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\FrontConFin\FrontConFin\obj\Debug\net8.0-windows\ref\FrontConFin.dll
 C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\FrontConFin\FrontConFin\obj\Debug\net8.0-windows\FrontConFin.Properties.Resources.resources
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\FrontConFin\FrontConFin\obj\Debug\net8.0-windows\FrontConFin.FrmLogin.resources

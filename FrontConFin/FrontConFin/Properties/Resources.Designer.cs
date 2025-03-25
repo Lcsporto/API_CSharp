@@ -63,9 +63,29 @@ namespace FrontConFin.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cancelar32X32 {
+            get {
+                object obj = ResourceManager.GetObject("Cancelar32X32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cidade32X32 {
             get {
                 object obj = ResourceManager.GetObject("Cidade32X32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Confirmar32X32 {
+            get {
+                object obj = ResourceManager.GetObject("Confirmar32X32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -116,6 +136,16 @@ namespace FrontConFin.Properties {
         internal static System.Drawing.Bitmap Sair32X32 {
             get {
                 object obj = ResourceManager.GetObject("Sair32X32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap UserAvatar {
+            get {
+                object obj = ResourceManager.GetObject("UserAvatar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
