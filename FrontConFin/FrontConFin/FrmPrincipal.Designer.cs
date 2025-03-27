@@ -74,9 +74,9 @@ namespace FrontConFin
             // 
             sairToolStripMenuItem.Image = Properties.Resources.Sair32X32;
             sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            sairToolStripMenuItem.Size = new Size(180, 22);
+            sairToolStripMenuItem.Size = new Size(93, 22);
             sairToolStripMenuItem.Text = "Sair";
-            sairToolStripMenuItem.Click += this.sairToolStripMenuItem_Click;
+            sairToolStripMenuItem.Click += sairToolStripMenuItem_Click;
             // 
             // cadastroToolStripMenuItem
             // 
@@ -89,21 +89,22 @@ namespace FrontConFin
             // 
             cidadeToolStripMenuItem.Image = Properties.Resources.Estado32X32;
             cidadeToolStripMenuItem.Name = "cidadeToolStripMenuItem";
-            cidadeToolStripMenuItem.Size = new Size(111, 22);
+            cidadeToolStripMenuItem.Size = new Size(180, 22);
             cidadeToolStripMenuItem.Text = "Estado";
+            cidadeToolStripMenuItem.Click += cidadeToolStripMenuItem_Click;
             // 
             // cidadeToolStripMenuItem1
             // 
             cidadeToolStripMenuItem1.Image = Properties.Resources.Cidade32X32;
             cidadeToolStripMenuItem1.Name = "cidadeToolStripMenuItem1";
-            cidadeToolStripMenuItem1.Size = new Size(111, 22);
+            cidadeToolStripMenuItem1.Size = new Size(180, 22);
             cidadeToolStripMenuItem1.Text = "Cidade";
             // 
             // pessoaToolStripMenuItem
             // 
             pessoaToolStripMenuItem.Image = Properties.Resources.Pessoa32X32;
             pessoaToolStripMenuItem.Name = "pessoaToolStripMenuItem";
-            pessoaToolStripMenuItem.Size = new Size(111, 22);
+            pessoaToolStripMenuItem.Size = new Size(180, 22);
             pessoaToolStripMenuItem.Text = "Pessoa";
             // 
             // lançamentoToolStripMenuItem
@@ -131,7 +132,7 @@ namespace FrontConFin
             // 
             usuárioToolStripMenuItem.Image = Properties.Resources.Usuario32X32;
             usuárioToolStripMenuItem.Name = "usuárioToolStripMenuItem";
-            usuárioToolStripMenuItem.Size = new Size(180, 22);
+            usuárioToolStripMenuItem.Size = new Size(114, 22);
             usuárioToolStripMenuItem.Text = "Usuário";
             // 
             // label2

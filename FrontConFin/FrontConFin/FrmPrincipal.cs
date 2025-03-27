@@ -1,4 +1,5 @@
 using FrontConFin.Models;
+using FrontConFin.Views;
 using System;
 using System.Windows.Forms;
 
@@ -29,6 +30,12 @@ namespace FrontConFin
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void cidadeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmEstados form = new FrmEstados();
+            form.ShowDialog();
         }
     }
 }
