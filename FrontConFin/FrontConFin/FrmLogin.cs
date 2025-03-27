@@ -41,9 +41,21 @@ namespace FrontConFin
                 return;
             }
 
-
+            UsuarioSession.Id = response.Usuario.Id;
+            UsuarioSession.Login = response.Usuario.Login;
+            UsuarioSession.Nome = response.Usuario.Nome;
+            UsuarioSession.Funcao = response.Usuario.Funcao;
+            UsuarioSession.Token = response.Token;
 
             Close();
+        }
+
+        private void FrmLogin_KeyDown(object sender, KeyEventArgs e) //Faz com que ao pressionar o Enter de qualquer parte do formulário, ele chame o botão de Login.
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonLogin_Click(sender, e);
+            }
         }
     }
 }

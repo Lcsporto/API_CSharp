@@ -1,3 +1,4 @@
+using FrontConFin.Models;
 using System;
 using System.Windows.Forms;
 
@@ -7,7 +8,18 @@ namespace FrontConFin
     {
         public FrmPrincipal()
         {
-            InitializeComponent();
+            InitializeComponent(); //Todos os componentes existirão após essa chamada
+            labelUsuario.Text = "Usuario: " + UsuarioSession.Nome;
+            verificaPermissoesUsuario();
+        }
+
+        private void verificaPermissoesUsuario()
+        {
+            usuárioToolStripMenuItem.Enabled = false;
+            if (UsuarioSession.Funcao == "Gerente")
+            {
+                usuárioToolStripMenuItem.Enabled = true;
+            }
         }
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {

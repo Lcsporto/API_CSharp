@@ -121,9 +121,11 @@
             Controls.Add(textBoxLogin);
             Controls.Add(label1);
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            KeyPreview = true;
             Name = "FrmLogin";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "ConFin - Login";
+            KeyDown += FrmLogin_KeyDown;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
