@@ -54,12 +54,12 @@
             s = new System.Windows.Forms.Button();
             tabControl1 = new System.Windows.Forms.TabControl();
             tabPage1 = new System.Windows.Forms.TabPage();
-            tabPage2 = new System.Windows.Forms.TabPage();
             dataGridView1 = new System.Windows.Forms.DataGridView();
-            label3 = new System.Windows.Forms.Label();
-            textBoxSigla = new System.Windows.Forms.TextBox();
+            tabPage2 = new System.Windows.Forms.TabPage();
             textBoxNome = new System.Windows.Forms.TextBox();
             label4 = new System.Windows.Forms.Label();
+            textBoxSigla = new System.Windows.Forms.TextBox();
+            label3 = new System.Windows.Forms.Label();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             panel4.SuspendLayout();
@@ -69,8 +69,8 @@
             panel6.SuspendLayout();
             tabControl1.SuspendLayout();
             tabPage1.SuspendLayout();
-            tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            tabPage2.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -116,6 +116,7 @@
             buttonPesquisar.Text = "Pesquisar";
             buttonPesquisar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             buttonPesquisar.UseVisualStyleBackColor = true;
+            buttonPesquisar.Click += buttonPesquisar_Click;
             // 
             // textBoxPesquisa
             // 
@@ -187,6 +188,7 @@
             buttonUltima.Text = "Últma";
             buttonUltima.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             buttonUltima.UseVisualStyleBackColor = true;
+            buttonUltima.Click += buttonUltima_Click;
             // 
             // buttonProxima
             // 
@@ -199,6 +201,7 @@
             buttonProxima.Text = "Próxima";
             buttonProxima.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             buttonProxima.UseVisualStyleBackColor = true;
+            buttonProxima.Click += buttonProxima_Click;
             // 
             // buttonAnterior
             // 
@@ -211,6 +214,7 @@
             buttonAnterior.Text = "Anterior";
             buttonAnterior.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             buttonAnterior.UseVisualStyleBackColor = true;
+            buttonAnterior.Click += buttonAnterior_Click;
             // 
             // buttonPrimeira
             // 
@@ -223,6 +227,7 @@
             buttonPrimeira.Text = "Primeira";
             buttonPrimeira.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             buttonPrimeira.UseVisualStyleBackColor = true;
+            buttonPrimeira.Click += buttonPrimeira_Click;
             // 
             // panel3
             // 
@@ -361,6 +366,15 @@
             tabPage1.Text = "Registros";
             tabPage1.UseVisualStyleBackColor = true;
             // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            dataGridView1.Location = new System.Drawing.Point(3, 3);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new System.Drawing.Size(826, 301);
+            dataGridView1.TabIndex = 0;
+            // 
             // tabPage2
             // 
             tabPage2.Controls.Add(textBoxNome);
@@ -374,33 +388,6 @@
             tabPage2.TabIndex = 1;
             tabPage2.Text = "Detalhes";
             tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            dataGridView1.Location = new System.Drawing.Point(3, 3);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new System.Drawing.Size(826, 301);
-            dataGridView1.TabIndex = 0;
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(22, 31);
-            label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(32, 15);
-            label3.TabIndex = 0;
-            label3.Text = "Sigla";
-            // 
-            // textBoxSigla
-            // 
-            textBoxSigla.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            textBoxSigla.Location = new System.Drawing.Point(22, 49);
-            textBoxSigla.MaxLength = 2;
-            textBoxSigla.Name = "textBoxSigla";
-            textBoxSigla.Size = new System.Drawing.Size(32, 23);
-            textBoxSigla.TabIndex = 1;
             // 
             // textBoxNome
             // 
@@ -418,6 +405,24 @@
             label4.TabIndex = 2;
             label4.Text = "Nome";
             // 
+            // textBoxSigla
+            // 
+            textBoxSigla.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
+            textBoxSigla.Location = new System.Drawing.Point(22, 49);
+            textBoxSigla.MaxLength = 2;
+            textBoxSigla.Name = "textBoxSigla";
+            textBoxSigla.Size = new System.Drawing.Size(32, 23);
+            textBoxSigla.TabIndex = 1;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new System.Drawing.Point(22, 31);
+            label3.Name = "label3";
+            label3.Size = new System.Drawing.Size(32, 15);
+            label3.TabIndex = 0;
+            label3.Text = "Sigla";
+            // 
             // FrmEstados
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -426,9 +431,11 @@
             Controls.Add(tabControl1);
             Controls.Add(panel2);
             Controls.Add(panel1);
+            KeyPreview = true;
             Name = "FrmEstados";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Cadastro de Estados";
+            KeyDown += FrmEstados_KeyDown;
             panel1.ResumeLayout(false);
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
@@ -440,9 +447,9 @@
             panel6.ResumeLayout(false);
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             tabPage2.ResumeLayout(false);
             tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
