@@ -28,7 +28,7 @@ namespace FrontConFin.Views
         {
             buttonSalvar.Enabled = false;
             buttonCancelar.Enabled = false;
-            buttonNovo.Enabled = true;
+            buttonNovo.Enabled = permissaoUsuario();
             buttonAlterar.Enabled = false;
             buttonExcluir.Enabled = false;
             buttonPrimeira.Enabled = false;
@@ -43,7 +43,7 @@ namespace FrontConFin.Views
                 buttonAnterior.Enabled = true;
                 buttonProxima.Enabled = true;
                 buttonUltima.Enabled = true;
-                buttonAlterar.Enabled = true;
+                buttonAlterar.Enabled = permissaoUsuario();
                 buttonExcluir.Enabled = permissaoUsuario();
             }
         }
