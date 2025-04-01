@@ -55,13 +55,13 @@
             tabControl1 = new System.Windows.Forms.TabControl();
             tabPage1 = new System.Windows.Forms.TabPage();
             dataGridView1 = new System.Windows.Forms.DataGridView();
+            Sigla = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             tabPage2 = new System.Windows.Forms.TabPage();
             textBoxNome = new System.Windows.Forms.TextBox();
             label4 = new System.Windows.Forms.Label();
             textBoxSigla = new System.Windows.Forms.TextBox();
             label3 = new System.Windows.Forms.Label();
-            Sigla = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             panel4.SuspendLayout();
@@ -385,6 +385,20 @@
             dataGridView1.TabIndex = 0;
             dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
             // 
+            // Sigla
+            // 
+            Sigla.DataPropertyName = "Sigla";
+            Sigla.HeaderText = "Sigla";
+            Sigla.Name = "Sigla";
+            Sigla.Width = 80;
+            // 
+            // Nome
+            // 
+            Nome.DataPropertyName = "Nome";
+            Nome.HeaderText = "Nome";
+            Nome.Name = "Nome";
+            Nome.Width = 400;
+            // 
             // tabPage2
             // 
             tabPage2.Controls.Add(textBoxNome);
@@ -432,20 +446,6 @@
             label3.Size = new System.Drawing.Size(32, 15);
             label3.TabIndex = 0;
             label3.Text = "Sigla";
-            // 
-            // Sigla
-            // 
-            Sigla.DataPropertyName = "Sigla";
-            Sigla.HeaderText = "Sigla";
-            Sigla.Name = "Sigla";
-            Sigla.Width = 80;
-            // 
-            // Nome
-            // 
-            Nome.DataPropertyName = "Nome";
-            Nome.HeaderText = "Nome";
-            Nome.Name = "Nome";
-            Nome.Width = 400;
             // 
             // FrmEstados
             // 

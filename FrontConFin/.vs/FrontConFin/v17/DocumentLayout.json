@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\frontconfin\\frontconfin\\views\\frmestados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\views\\frmestados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\frontconfin\\frontconfin\\views\\frmcidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\views\\frmcidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\frontconfin\\views\\frmestados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\views\\frmestados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\frontconfin\\frontconfin\\views\\frmcidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\views\\frmcidades.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\frontconfin\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\frontconfin\\frontconfin\\models\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\models\\estado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\frontconfin\\frontconfin\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\frontconfin\\frontconfin\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\frmprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|c:\\users\\lucas\\onedrive\\documentos\\estudos\\2.0\\api_csharp\\api_csharp\\frontconfin\\frontconfin\\services\\estadoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{18F3A7EA-AD56-4D31-A844-F79DD7218DAB}|FrontConFin\\FrontConFin.csproj|solutionrelative:frontconfin\\services\\estadoservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,55 +30,70 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FrmEstados.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Views\\FrmEstados.cs",
-              "RelativeDocumentMoniker": "FrontConFin\\Views\\FrmEstados.cs",
-              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Views\\FrmEstados.cs [Design]",
-              "RelativeToolTip": "FrontConFin\\Views\\FrmEstados.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "Estado.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Models\\Estado.cs",
+              "RelativeDocumentMoniker": "FrontConFin\\Models\\Estado.cs",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Models\\Estado.cs",
+              "RelativeToolTip": "FrontConFin\\Models\\Estado.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T21:43:10.028Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-04-01T03:43:08.429Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
+              "Title": "FrmPrincipal.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\FrmPrincipal.cs",
+              "RelativeDocumentMoniker": "FrontConFin\\FrmPrincipal.cs",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\FrmPrincipal.cs",
+              "RelativeToolTip": "FrontConFin\\FrmPrincipal.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowCUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T03:35:19.775Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "FrmPrincipal.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\FrmPrincipal.cs",
               "RelativeDocumentMoniker": "FrontConFin\\FrmPrincipal.cs",
               "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\FrmPrincipal.cs [Projeto]",
               "RelativeToolTip": "FrontConFin\\FrmPrincipal.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T21:08:40.492Z"
+              "WhenOpened": "2025-04-01T03:35:37.04Z",
+              "EditorCaption": " [Projeto]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "EstadoServices.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Services\\EstadoServices.cs",
-              "RelativeDocumentMoniker": "FrontConFin\\Services\\EstadoServices.cs",
-              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Services\\EstadoServices.cs",
-              "RelativeToolTip": "FrontConFin\\Services\\EstadoServices.cs",
-              "ViewState": "AgIAAMYAAAAAAAAAAAAQwMUAAAA4AAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "FrmCidades.cs",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Views\\FrmCidades.cs",
+              "RelativeDocumentMoniker": "FrontConFin\\Views\\FrmCidades.cs",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Views\\FrmCidades.cs",
+              "RelativeToolTip": "FrontConFin\\Views\\FrmCidades.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAD4v6EAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T20:40:11.571Z"
+              "WhenOpened": "2025-04-01T03:22:13.33Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FrmEstados.cs",
-              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Views\\FrmEstados.cs",
-              "RelativeDocumentMoniker": "FrontConFin\\Views\\FrmEstados.cs",
-              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Views\\FrmEstados.cs",
-              "RelativeToolTip": "FrontConFin\\Views\\FrmEstados.cs",
-              "ViewState": "AgIAAGUAAAAAAAAAAAAIwCQAAAApAAAAAAAAAA==",
+              "Title": "FrmCidades.cs [Projeto]",
+              "DocumentMoniker": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Views\\FrmCidades.cs",
+              "RelativeDocumentMoniker": "FrontConFin\\Views\\FrmCidades.cs",
+              "ToolTip": "C:\\Users\\lucas\\OneDrive\\Documentos\\Estudos\\2.0\\API_CSharp\\API_CSharp\\FrontConFin\\FrontConFin\\Views\\FrmCidades.cs [Projeto]",
+              "RelativeToolTip": "FrontConFin\\Views\\FrmCidades.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T12:43:24.964Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T02:43:34.033Z",
+              "EditorCaption": " [Projeto]"
             }
           ]
         }

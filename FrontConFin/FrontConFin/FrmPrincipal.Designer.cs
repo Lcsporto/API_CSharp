@@ -99,6 +99,7 @@ namespace FrontConFin
             cidadeToolStripMenuItem1.Name = "cidadeToolStripMenuItem1";
             cidadeToolStripMenuItem1.Size = new Size(180, 22);
             cidadeToolStripMenuItem1.Text = "Cidade";
+            cidadeToolStripMenuItem1.Click += cidadeToolStripMenuItem_Click;
             // 
             // pessoaToolStripMenuItem
             // 

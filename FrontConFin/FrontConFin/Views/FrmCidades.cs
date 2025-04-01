@@ -12,15 +12,16 @@ using System.Windows.Forms;
 
 namespace FrontConFin.Views
 {
-    public partial class FrmEstados : Form
+    public partial class FrmCidades : Form
     {
-        private PaginacaoResponse<Estado> paginacao = null;
+        private PaginacaoResponse<Cidade> paginacao = null;
         private bool novo = false;
 
-        public FrmEstados()
+        public FrmCidades()
         {
             InitializeComponent();
             dataGridView1.AutoGenerateColumns = false;
+            carregaComboEstado();
             atualizaDados();
         }
 
@@ -62,7 +63,7 @@ namespace FrontConFin.Views
         {
             int skip = int.Parse(textBoxSkip.Text);
             int take = int.Parse(textBoxTake.Text);
-            paginacao = await EstadoServices.Paginacao(textBoxPesquisa.Text, skip, take, checkBoxOrdem.Checked);
+            paginacao = await CidadeServices.Paginacao(textBoxPesquisa.Text, skip, take, checkBoxOrdem.Checked);
             dataGridView1.DataSource = paginacao.Dados;
             atualizaCamposDetalhes();
             verificaBotoes();
@@ -134,13 +135,31 @@ namespace FrontConFin.Views
             atualizaCamposDetalhes();
         }
 
+        private async void carregaComboEstado()
+        { 
+            comboBoxEstado.DataSource = await EstadoServices.GetEstados();
+        }
+
         private void atualizaCamposDetalhes()
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                Estado estado = (Estado)dataGridView1.SelectedRows[0].DataBoundItem;
-                textBoxSigla.Text = estado.Sigla;
-                textBoxNome.Text = estado.Nome;
+                Cidade cidade = (Cidade)dataGridView1.SelectedRows[0].DataBoundItem;
+                textBoxId.Text = cidade.Id.ToString();
+                textBoxNome.Text = cidade.Nome;
+                //textBoxEstadoSigla.Text = cidade.EstadoSigla;
+
+                int indice = 0;
+                for (int i = 0; i < comboBoxEstado.Items.Count; i++)
+                {
+                    Estado estado = (Estado) comboBoxEstado.Items[i];
+                    if(estado.Sigla == cidade.EstadoSigla)
+                    {
+                        indice = i;
+                        break;
+                    }
+                }
+                comboBoxEstado.SelectedIndex = indice;
             }
         }
 
@@ -150,7 +169,7 @@ namespace FrontConFin.Views
             habilitaBotoes();
             habilitaCampos();
             tabControl1.SelectedTab = tabPage2;
-            textBoxSigla.Focus();
+            textBoxId.Focus();
         }
 
         private void buttonCancelar_Click(object sender, EventArgs e)
@@ -163,13 +182,19 @@ namespace FrontConFin.Views
 
         private async void buttonSalvar_Click(object sender, EventArgs e)
         {
-            Estado estado = new Estado()
+            Estado estado = (Estado) comboBoxEstado.SelectedItem;
+            Cidade cidade = new Cidade()
             {
-                Sigla = textBoxSigla.Text,
-                Nome = textBoxNome.Text
+                Nome = textBoxNome.Text,
+                EstadoSigla = estado.Sigla
             };
 
-            var resultado = novo ? await EstadoServices.PostEstado(estado) : await EstadoServices.PutEstado(estado);
+            if (!novo)
+            {
+                cidade.Id = Guid.Parse(textBoxId.Text);
+            }
+
+            var resultado = novo ? await CidadeServices.PostCidade(cidade) : await CidadeServices.PutCidade(cidade);
 
             if (resultado)
             {
@@ -183,22 +208,25 @@ namespace FrontConFin.Views
         {
             if (novo)
             {
-                textBoxSigla.ReadOnly = false;
+                textBoxId.ReadOnly = true;
                 textBoxNome.ReadOnly = false;
-                textBoxSigla.Clear();
+                comboBoxEstado.Enabled = true;
+                textBoxId.Clear();
                 textBoxNome.Clear();
             }
             else
             {
-                textBoxSigla.ReadOnly = true;
+                textBoxId.ReadOnly = true;
                 textBoxNome.ReadOnly = false;
+                comboBoxEstado.Enabled = true;
             }
         }
 
         private void desabilitaCampos()
         {
-            textBoxSigla.ReadOnly = true;
+            textBoxId.ReadOnly = true;
             textBoxNome.ReadOnly = true;
+            comboBoxEstado.Enabled = false;
         }
 
         private void habilitaBotoes()
@@ -221,17 +249,17 @@ namespace FrontConFin.Views
             habilitaBotoes();
             habilitaCampos();
             tabControl1.SelectedTab = tabPage2;
-            textBoxSigla.Focus();
+            textBoxId.Focus();
         }
 
         private async void buttonExcluir_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
             {
-                Estado estado = (Estado)dataGridView1.SelectedRows[0].DataBoundItem;
+                Cidade cidade = (Cidade)dataGridView1.SelectedRows[0].DataBoundItem;
                 DialogResult result = MessageBox.Show(
                                                 null,
-                                                $"Deseja excluir o estado {estado.Sigla}?",
+                                                $"Deseja excluir o estado {cidade.Nome}?",
                                                 "Controle Finançeiro",
                                                 MessageBoxButtons.OKCancel,
                                                 MessageBoxIcon.Question
@@ -239,7 +267,7 @@ namespace FrontConFin.Views
 
                 if (result == DialogResult.OK)
                 {
-                    var resultado = await EstadoServices.DeleteEstado(estado.Sigla);
+                    var resultado = await CidadeServices.DeleteCidade(cidade.Id.ToString());
                     if (resultado)
                     {
                         tabControl1.SelectedTab = tabPage1;

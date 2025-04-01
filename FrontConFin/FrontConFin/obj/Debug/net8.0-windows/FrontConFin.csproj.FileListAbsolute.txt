@@ -57,3 +57,4 @@ C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\FrontConFin
 C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\FrontConFin\FrontConFin\obj\Debug\net8.0-windows\FrontCon.48736DDF.Up2Date
 C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\FrontConFin\FrontConFin\bin\Debug\net8.0-windows\appsettings.json
 C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\FrontConFin\FrontConFin\obj\Debug\net8.0-windows\FrontConFin.Views.FrmEstados.resources
+C:\Users\lucas\OneDrive\Documentos\Estudos\2.0\API_CSharp\API_CSharp\FrontConFin\FrontConFin\obj\Debug\net8.0-windows\FrontConFin.Views.FrmCidades.resources

@@ -34,8 +34,9 @@ namespace FrontConFin
 
         private void cidadeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmEstados form = new FrmEstados();
+            FrmCidades form = new FrmCidades();
             form.ShowDialog();
         }
+
     }
 }

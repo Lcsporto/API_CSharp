@@ -6,15 +6,10 @@ using System.Threading.Tasks;
 
 namespace FrontConFin.Models
 {
-    public class Estado
+    public class Cidade
     {
-        public string Sigla { get; set; }
+        public Guid Id { get; set; }
         public string Nome { get; set; }
-
-        override public string ToString()
-        {
-            return Sigla + " - " + Nome; 
-        }
-
+        public string EstadoSigla { get; set; }
     }
 }
