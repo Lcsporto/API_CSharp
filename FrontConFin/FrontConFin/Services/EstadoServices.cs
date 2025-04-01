@@ -110,6 +110,115 @@ namespace FrontConFin.Services
             return paginacao;
         }
 
+        public async static Task<bool> PostEstado(Estado estado)
+        {
+            bool resultado = false;
+            try
+            {
+                var endpoint = Program.Configuration.GetSection("WFConFin:Endpoint").Value;
+
+                HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri(endpoint);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", UsuarioSession.Token);
+                client.Timeout = new TimeSpan(0, 0, 30);
+                var json = JsonConvert.SerializeObject(estado);
+                var contentEstado = new StringContent(json, Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = await client.PostAsync("Estado", contentEstado);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    resultado = true;
+                    var content = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show(content);
+                }
+                else
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show(content);
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Erro: " + e.Message);
+            }
+
+            return resultado;
+        }
+
+        public async static Task<bool> PutEstado(Estado estado)
+        {
+            bool resultado = false;
+            try
+            {
+                var endpoint = Program.Configuration.GetSection("WFConFin:Endpoint").Value;
+
+                HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri(endpoint);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", UsuarioSession.Token);
+                client.Timeout = new TimeSpan(0, 0, 30);
+                var json = JsonConvert.SerializeObject(estado);
+                var contentEstado = new StringContent(json, Encoding.UTF8, "application/json");
+
+                HttpResponseMessage response = await client.PutAsync("Estado", contentEstado);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    resultado = true;
+                    var content = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show(content);
+                }
+                else
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show(content);
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Erro: " + e.Message);
+            }
+
+            return resultado;
+        }
+
+        public async static Task<bool> DeleteEstado(string sigla)
+        {
+            bool resultado = false;
+            try
+            {
+                var endpoint = Program.Configuration.GetSection("WFConFin:Endpoint").Value;
+
+                HttpClient client = new HttpClient();
+                client.BaseAddress = new Uri(endpoint);
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", UsuarioSession.Token);
+                client.Timeout = new TimeSpan(0, 0, 30);
+
+                HttpResponseMessage response = await client.DeleteAsync($"Estado/{sigla}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    resultado = true;
+                    var content = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show(content);
+                }
+                else
+                {
+                    var content = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show(content);
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Erro: " + e.Message);
+            }
+
+            return resultado;
+        }
+
 
     }
 }

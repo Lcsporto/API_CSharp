@@ -51,7 +51,7 @@
             panel6 = new System.Windows.Forms.Panel();
             buttonExcluir = new System.Windows.Forms.Button();
             buttonAlterar = new System.Windows.Forms.Button();
-            s = new System.Windows.Forms.Button();
+            buttonNovo = new System.Windows.Forms.Button();
             tabControl1 = new System.Windows.Forms.TabControl();
             tabPage1 = new System.Windows.Forms.TabPage();
             dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -60,6 +60,8 @@
             label4 = new System.Windows.Forms.Label();
             textBoxSigla = new System.Windows.Forms.TextBox();
             label3 = new System.Windows.Forms.Label();
+            Sigla = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             panel1.SuspendLayout();
             panel5.SuspendLayout();
             panel4.SuspendLayout();
@@ -282,6 +284,7 @@
             buttonCancelar.Text = "Cancelar";
             buttonCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             buttonCancelar.UseVisualStyleBackColor = true;
+            buttonCancelar.Click += buttonCancelar_Click;
             // 
             // buttonSalvar
             // 
@@ -294,12 +297,13 @@
             buttonSalvar.Text = "Salvar";
             buttonSalvar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             buttonSalvar.UseVisualStyleBackColor = true;
+            buttonSalvar.Click += buttonSalvar_Click;
             // 
             // panel6
             // 
             panel6.Controls.Add(buttonExcluir);
             panel6.Controls.Add(buttonAlterar);
-            panel6.Controls.Add(s);
+            panel6.Controls.Add(buttonNovo);
             panel6.Dock = System.Windows.Forms.DockStyle.Left;
             panel6.Location = new System.Drawing.Point(0, 0);
             panel6.Name = "panel6";
@@ -317,6 +321,7 @@
             buttonExcluir.Text = "Excluir";
             buttonExcluir.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             buttonExcluir.UseVisualStyleBackColor = true;
+            buttonExcluir.Click += buttonExcluir_Click;
             // 
             // buttonAlterar
             // 
@@ -329,18 +334,20 @@
             buttonAlterar.Text = "Alterar";
             buttonAlterar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             buttonAlterar.UseVisualStyleBackColor = true;
+            buttonAlterar.Click += buttonAlterar_Click;
             // 
-            // s
+            // buttonNovo
             // 
-            s.Image = Properties.Resources.Novo32X32;
-            s.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            s.Location = new System.Drawing.Point(11, 6);
-            s.Name = "s";
-            s.Size = new System.Drawing.Size(94, 41);
-            s.TabIndex = 8;
-            s.Text = "Novo";
-            s.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            s.UseVisualStyleBackColor = true;
+            buttonNovo.Image = Properties.Resources.Novo32X32;
+            buttonNovo.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            buttonNovo.Location = new System.Drawing.Point(11, 6);
+            buttonNovo.Name = "buttonNovo";
+            buttonNovo.Size = new System.Drawing.Size(94, 41);
+            buttonNovo.TabIndex = 8;
+            buttonNovo.Text = "Novo";
+            buttonNovo.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            buttonNovo.UseVisualStyleBackColor = true;
+            buttonNovo.Click += buttonNovo_Click;
             // 
             // tabControl1
             // 
@@ -369,11 +376,14 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { Sigla, Nome });
             dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             dataGridView1.Location = new System.Drawing.Point(3, 3);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             dataGridView1.Size = new System.Drawing.Size(826, 301);
             dataGridView1.TabIndex = 0;
+            dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
             // 
             // tabPage2
             // 
@@ -422,6 +432,20 @@
             label3.Size = new System.Drawing.Size(32, 15);
             label3.TabIndex = 0;
             label3.Text = "Sigla";
+            // 
+            // Sigla
+            // 
+            Sigla.DataPropertyName = "Sigla";
+            Sigla.HeaderText = "Sigla";
+            Sigla.Name = "Sigla";
+            Sigla.Width = 80;
+            // 
+            // Nome
+            // 
+            Nome.DataPropertyName = "Nome";
+            Nome.HeaderText = "Nome";
+            Nome.Name = "Nome";
+            Nome.Width = 400;
             // 
             // FrmEstados
             // 
@@ -477,7 +501,7 @@
         private System.Windows.Forms.CheckBox checkBoxOrdem;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button s;
+        private System.Windows.Forms.Button buttonNovo;
         private System.Windows.Forms.Button buttonAlterar;
         private System.Windows.Forms.Button buttonSalvar;
         private System.Windows.Forms.Button buttonExcluir;
@@ -487,5 +511,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBoxSigla;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Sigla;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nome;
     }
 }
